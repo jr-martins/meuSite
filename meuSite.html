@@ -147,12 +147,12 @@
     <div class="content">
         <div class="menu-container">
             <ul>
-                <li class="active"><a href="#sobre">Sobre</a></li>
+                <li class="active"><a href="#inicio">Início</a></li>
                 <li><a href="#contato">Fale Conosco</a></li>
             </ul>
         </div>
 
-        <div class="image-container">
+        <div id="inicio" class="image-container">
             <img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa">
         </div>
 
@@ -202,8 +202,12 @@
                 this.parentElement.classList.add('active');
 
                 // Scroll suave até a seção correspondente
-                const section = document.querySelector(this.getAttribute('href'));
-                section.scrollIntoView({ behavior: 'smooth' });
+                if (this.getAttribute('href') === '#inicio') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    const section = document.querySelector(this.getAttribute('href'));
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
     </script>
