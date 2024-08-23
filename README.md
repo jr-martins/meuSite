@@ -20,20 +20,43 @@
             position: absolute;
             top: 0;
             width: 100%;
-            background-color: #ff5722;
-            text-align: center;
-            padding: 10px 0;
+            background-color: white;
+            padding: 20px 0;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .menu-container a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .menu-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
         }
-        .menu-container a:hover {
+        .menu-container ul li {
+            position: relative;
+        }
+        .menu-container ul li a {
+            text-decoration: none;
+            color: #bc8a5e;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+        .menu-container ul li a:hover {
+            color: #e64a19;
+        }
+        .menu-container ul li.active a {
+            color: #e64a19;
+        }
+        .menu-container ul li.active a::after,
+        .menu-container ul li a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            height: 3px;
             background-color: #e64a19;
         }
         .container {
@@ -41,7 +64,7 @@
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
-            margin-top: 60px; /* Espaço para o menu */
+            margin-top: 80px; /* Espaço para o menu */
         }
         img {
             width: 100%;
@@ -92,10 +115,15 @@
             transform: scale(1.1);
         }
         @media (max-width: 600px) {
-            .menu-container a {
-                margin: 0 10px;
-                padding: 8px 12px;
+            .menu-container ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .menu-container ul li a {
                 font-size: 14px;
+            }
+            .container {
+                margin-top: 100px; /* Ajuste de espaço para dispositivos móveis */
             }
             .section {
                 padding: 15px;
@@ -110,8 +138,13 @@
 </head>
 <body>
     <div class="menu-container">
-        <a href="#sobre-mim">Sobre Mim</a>
-        <a href="#contato">Contato</a>
+        <ul>
+            <li class="active"><a href="#missao">Missão</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+        </ul>
     </div>
 
     <div class="container">
@@ -138,7 +171,7 @@
             <a href="https://www.facebook.com/vereadorflexa" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/vereadorflexa" target="_blank">
+            <a href="https://www.instagram.com/falaflexa/" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.whatsapp.com/vereadorflexa" target="_blank">
