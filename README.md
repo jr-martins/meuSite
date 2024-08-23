@@ -10,7 +10,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,7 +19,7 @@
         .menu-container {
             width: 100%;
             background-color: white;
-            padding: 20px 0;
+            padding: 15px 0;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -31,7 +31,8 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
         .menu-container ul li {
             position: relative;
@@ -63,9 +64,8 @@
         .container {
             text-align: center;
             width: 100%;
-            padding: 10px;
+            padding: 20px;
             box-sizing: border-box;
-            margin-top: 20px;
             flex-grow: 1;
             display: flex;
             justify-content: center;
@@ -101,6 +101,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .social-icons a {
             display: inline-block;
@@ -122,13 +123,10 @@
         @media (max-width: 600px) {
             .menu-container ul {
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
             }
             .menu-container ul li a {
                 font-size: 14px;
-            }
-            .container {
-                margin-top: 60px;
             }
             .section {
                 padding: 15px;
@@ -181,5 +179,19 @@
             </a>
         </div>
     </div>
+
+    <script>
+        // JavaScript para gerenciar a seleção de menu
+        document.querySelectorAll('.menu-container ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove a classe active de todos os itens
+                document.querySelectorAll('.menu-container ul li').forEach(item => {
+                    item.classList.remove('active');
+                });
+                // Adiciona a classe active ao item clicado
+                this.parentElement.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
