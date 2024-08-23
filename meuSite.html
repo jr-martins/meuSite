@@ -25,7 +25,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f2f2f2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
@@ -34,7 +34,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 15px 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>top: 0;</span></p>
@@ -46,7 +46,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container ul li {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
@@ -78,9 +79,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-grow: 1;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
@@ -116,6 +116,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.social-icons a {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-block;</span></p>
@@ -137,13 +138,10 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.menu-container ul {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>flex-direction: column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>gap: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>gap: 10px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.menu-container ul li a {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>font-size: 14px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>margin-top: 60px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.section {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>padding: 15px;</span></p>
@@ -196,6 +194,20 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// JavaScript para gerenciar a seleção de menu</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.menu-container ul li a').forEach(link =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>link.addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Remove a classe active de todos os itens</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.querySelectorAll('.menu-container ul li').forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>item.classList.remove('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Adiciona a classe active ao item clicado</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>this.parentElement.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
