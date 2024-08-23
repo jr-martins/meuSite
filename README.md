@@ -10,20 +10,28 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            min-height: 100vh;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .menu-container {
             width: 100%;
             background-color: white;
             padding: 15px 0;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            margin-bottom: 20px;
         }
         .menu-container ul {
             list-style: none;
@@ -45,9 +53,7 @@
             padding: 5px 0;
             transition: color 0.3s;
         }
-        .menu-container ul li a:hover {
-            color: #e64a19;
-        }
+        .menu-container ul li a:hover,
         .menu-container ul li.active a {
             color: #e64a19;
         }
@@ -60,16 +66,6 @@
             bottom: -5px;
             height: 3px;
             background-color: #e64a19;
-        }
-        .container {
-            text-align: center;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         img {
             width: 100%;
@@ -140,56 +136,66 @@
     </style>
 </head>
 <body>
-    <div class="menu-container">
-        <ul>
-            <li class="active"><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Fale Conosco</a></li>
-        </ul>
-    </div>
+    <div class="content">
+        <div class="menu-container">
+            <ul>
+                <li class="active"><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+        </div>
 
-    <div class="container">
-        <img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa">
-    </div>
+        <div>
+            <img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa">
+        </div>
 
-    <div id="sobre-mim" class="section">
-        <h2>Sobre Mim</h2>
-        <p>
-            Meu nome é Flexa, e estou me candidatando a vereador com a missão de representar nossa comunidade de forma justa e transparente. Com anos de experiência em causas sociais e engajamento comunitário, acredito que juntos podemos fazer a diferença e construir um futuro melhor para todos. Meu compromisso é com a verdade, a justiça e a melhoria da qualidade de vida de nossa cidade.
-        </p>
-    </div>
+        <div id="sobre-mim" class="section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Meu nome é Flexa, e estou me candidatando a vereador com a missão de representar nossa comunidade de forma justa e transparente. Com anos de experiência em causas sociais e engajamento comunitário, acredito que juntos podemos fazer a diferença e construir um futuro melhor para todos. Meu compromisso é com a verdade, a justiça e a melhoria da qualidade de vida de nossa cidade.
+            </p>
+        </div>
 
-    <div id="contato" class="section">
-        <h2>Contato</h2>
-        <p>
-            Se você deseja entrar em contato comigo, fique à vontade para enviar um e-mail para:
-            <a href="mailto:contato@vereadorflexa.com">contato@vereadorflexa.com</a> ou ligue para (11) 98765-4321.
-        </p>
-        <p>
-            Você também pode me seguir nas redes sociais:
-        </p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/vereadorflexa" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/falaflexa/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.whatsapp.com/vereadorflexa" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+        <div id="contato" class="section">
+            <h2>Contato</h2>
+            <p>
+                Se você deseja entrar em contato comigo, fique à vontade para enviar um e-mail para:
+                <a href="mailto:contato@vereadorflexa.com">contato@vereadorflexa.com</a> ou ligue para (11) 98765-4321.
+            </p>
+            <p>
+                Você também pode me seguir nas redes sociais:
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/vereadorflexa" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/falaflexa/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.whatsapp.com/vereadorflexa" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
     </div>
 
     <script>
         // JavaScript para gerenciar a seleção de menu
         document.querySelectorAll('.menu-container ul li a').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(event) {
+                // Prevenir o comportamento padrão do link
+                event.preventDefault();
+                
                 // Remove a classe active de todos os itens
                 document.querySelectorAll('.menu-container ul li').forEach(item => {
                     item.classList.remove('active');
                 });
+
                 // Adiciona a classe active ao item clicado
                 this.parentElement.classList.add('active');
+
+                // Scroll suave até a seção correspondente
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
