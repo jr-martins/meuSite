@@ -6,22 +6,25 @@
     <title>Campanha Vereador Flexa</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f2f2f2;
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
         .container {
-            text-align: center;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
         }
         img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .links {
             text-align: center;
@@ -35,18 +38,37 @@
             border-radius: 5px;
             margin: 5px;
             display: inline-block;
+            transition: background-color 0.3s;
         }
         .links a:hover {
             background-color: #e64a19;
         }
         .section {
             margin-top: 20px;
-            text-align: center;
-            max-width: 600px;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin: 0 0 10px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        @media (max-width: 600px) {
+            .links a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            .section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
