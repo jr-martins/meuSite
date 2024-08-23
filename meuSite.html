@@ -10,8 +10,9 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -21,7 +22,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            max-width: 600px;
             width: 100%;
             padding: 20px;
             box-sizing: border-box;
@@ -75,6 +75,7 @@
             max-width: 100%;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
         }
         .section {
             margin-top: 20px;
