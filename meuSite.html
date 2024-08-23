@@ -25,20 +25,28 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f2f2f2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.content {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: flex-start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 600px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: white;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 15px 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>top: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 1000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container ul {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>list-style: none;</span></p>
@@ -60,9 +68,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 5px 0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: color 0.3s;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container ul li a:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #e64a19;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container ul li a:hover,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.menu-container ul li.active a {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #e64a19;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
@@ -75,16 +81,6 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>bottom: -5px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 3px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #e64a19;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-grow: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>img {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
@@ -155,56 +151,66 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
 <p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="menu-container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li class="active"&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#contato"&gt;Fale Conosco&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="menu-container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li class="active"&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#contato"&gt;Fale Conosco&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="sobre-mim" class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Sobre Mim&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Meu nome é Flexa, e estou me candidatando a vereador com a missão de representar nossa comunidade de forma justa e transparente. Com anos de experiência em causas sociais e engajamento comunitário, acredito que juntos podemos fazer a diferença e construir um futuro melhor para todos. Meu compromisso é com a verdade, a justiça e a melhoria da qualidade de vida de nossa cidade.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="sobre-mim" class="section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Sobre Mim&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Meu nome é Flexa, e estou me candidatando a vereador com a missão de representar nossa comunidade de forma justa e transparente. Com anos de experiência em causas sociais e engajamento comunitário, acredito que juntos podemos fazer a diferença e construir um futuro melhor para todos. Meu compromisso é com a verdade, a justiça e a melhoria da qualidade de vida de nossa cidade.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="contato" class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Contato&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Se você deseja entrar em contato comigo, fique à vontade para enviar um e-mail para:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="mailto:contato@vereadorflexa.com"&gt;contato@vereadorflexa.com&lt;/a&gt; ou ligue para (11) 98765-4321.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Você também pode me seguir nas redes sociais:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="social-icons"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="https://www.facebook.com/vereadorflexa" target="_blank"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="https://www.instagram.com/falaflexa/" target="_blank"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="https://www.whatsapp.com/vereadorflexa" target="_blank"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fab fa-whatsapp"&gt;&lt;/i&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="contato" class="section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Contato&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Se você deseja entrar em contato comigo, fique à vontade para enviar um e-mail para:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="mailto:contato@vereadorflexa.com"&gt;contato@vereadorflexa.com&lt;/a&gt; ou ligue para (11) 98765-4321.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Você também pode me seguir nas redes sociais:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="social-icons"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.facebook.com/vereadorflexa" target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.instagram.com/falaflexa/" target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.whatsapp.com/vereadorflexa" target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-whatsapp"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// JavaScript para gerenciar a seleção de menu</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.menu-container ul li a').forEach(link =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>link.addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>link.addEventListener('click', function(event) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Prevenir o comportamento padrão do link</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>event.preventDefault();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Remove a classe active de todos os itens</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.querySelectorAll('.menu-container ul li').forEach(item =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>item.classList.remove('active');</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Adiciona a classe active ao item clicado</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>this.parentElement.classList.add('active');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Scroll suave até a seção correspondente</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const section = document.querySelector(this.getAttribute('href'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>section.scrollIntoView({ behavior: 'smooth' });</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
