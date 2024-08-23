@@ -13,16 +13,16 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             text-align: center;
         }
         .content {
+            width: 100%;
+            max-width: 1200px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 100%;
+            justify-content: flex-start;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -69,7 +69,12 @@
             height: 3px;
             background-color: #e64a19;
         }
-        img {
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .image-container img {
             width: 100%;
             height: auto;
             max-width: 100%;
@@ -147,7 +152,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="image-container">
             <img src="WhatsApp Image 2024-08-16 at 02.22.55.jpeg" alt="Campanha Vereador Flexa">
         </div>
 
